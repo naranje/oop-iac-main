@@ -1,0 +1,15 @@
+{
+  "name": "oop-iac",
+  "version": "1.0.0",
+  "description": "This is a pattern to deploy an angular website",
+  "scripts": {
+    "buildfrontend": "cd application/frontend && npm i && npm run build && cd ../../",
+    "buildcdk": "cd cdk && npm i && npm run build && cd ../",
+    "buildfunctions": "cd application/functions/add-item && npm install && npm run build && cd ../get-items && npm install && npm run build && cd ../shared-code/nodejs && npm install && npm run build && cd ../../",
+    "build": "npm run buildfrontend && npm run buildcdk && npm run buildfunctions",
+    "deploy": "npm run build && cd cdk && npm run deploy",
+    "test": "echo \"no ci/cd tests setup\""
+  },
+  "author": "Miran Nevesinjac",
+  "license": "ISC"
+}

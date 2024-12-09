@@ -1,0 +1,8 @@
+{
+  "aws-cdk:enableDiffNoFail": "true",
+  "@aws-cdk/core:region": "us-west-2",
+  "hosted-zone:account=647874871378:domainName=miran.me:region=us-west-2": {
+    "Id": "/hostedzone/Z01439761LG6M4CZPRNJR",
+    "Name": "miran.me."
+  }
+}
